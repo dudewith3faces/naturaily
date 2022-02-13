@@ -16,4 +16,4 @@ export const intialValue: IContext = {
 export const AppContext = createContext(intialValue);
 
 // @ts-ignore
-export const GetState = (): IState => useContext(AppContext).state;
+export const GetState = (): IState => useContext(AppContext).state as IState;

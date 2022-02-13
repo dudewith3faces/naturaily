@@ -1,3 +1,4 @@
+import { Input } from 'reactstrap';
 import { ITextInput } from '../interface';
 
 export const TextInput = ({
@@ -11,14 +12,21 @@ export const TextInput = ({
   return (
     <div className="form-group mb-3">
       <label className="label">{label}</label>
-      <input
+      <Input
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        onChange={onChange}
+        value={value}
+      />
+      {/* <input
         type={type}
         name={name}
         className={`form-control`}
         placeholder={placeholder}
         onChange={onChange}
         value={value}
-      />
+      /> */}
     </div>
   );
 };

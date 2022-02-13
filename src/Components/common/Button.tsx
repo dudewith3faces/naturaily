@@ -1,16 +1,16 @@
 import { IButton } from '../interface';
+import { Button as BootStrapButton } from 'reactstrap';
 
 export const Button = ({ onClick, label, disabled }: IButton) => {
   return (
     <div className="form-group">
-      <button
-        type="submit"
-        className="form-control btn btn-primary submit px-3"
+      <BootStrapButton
         onClick={onClick}
         disabled={disabled}
+        className="form-control btn btn-primary submit px-3"
       >
         {label}
-      </button>
+      </BootStrapButton>
     </div>
   );
 };

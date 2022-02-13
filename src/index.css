@@ -10980,6 +10980,12 @@ h5,
 .invalid-feedback {
   display: block !important;
   background-color: #dc3545;
-  color: white;
+  color: white !important;
   font-size: 100%;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  cursor: pointer !important;
 }

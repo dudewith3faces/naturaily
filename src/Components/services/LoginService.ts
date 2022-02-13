@@ -48,7 +48,8 @@ export const LoginService = () => {
       setToken(token);
       navigate(Paths.DASHBOARD);
     } catch (error) {
-      if (error instanceof Error) setError(error.message);
+      // @ts-ignore
+      setError(error.message);
     } finally {
       setDisabled(false);
     }

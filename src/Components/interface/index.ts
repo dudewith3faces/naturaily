@@ -1,4 +1,5 @@
 import { AxiosRequestHeaders } from 'axios';
+import { InputType } from 'reactstrap/types/lib/Input';
 
 export interface IContext extends IState {
   dispatch: React.Dispatch<IAction>;
@@ -15,7 +16,7 @@ export interface IUser {
 }
 
 export interface ITextInput extends IOnChange, ILabel {
-  type: string;
+  type: InputType;
   value: string;
   placeholder: string;
   name: string;

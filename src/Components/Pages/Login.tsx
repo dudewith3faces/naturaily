@@ -20,6 +20,7 @@ export const Login = () => {
       onChange: onChange,
       placeholder: 'password',
     },
+    // @ts-ignore
   ].map((data) => <TextInput key={data.label} {...data} />);
   return (
     <section className="ftco-section">
